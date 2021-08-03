@@ -1,0 +1,27 @@
+albumentations==0.4.6
+gpytorch==1.2.0
+jupyterlab==2.1.5
+mlflow==1.11.0
+numpy==1.18.5
+opencv-python==4.4.0.40
+pandas==1.1.0
+properscoring==0.1
+pytorch-ignite==0.4.1
+pytorch-metric-learning==0.9.94
+scikit-learn==0.23.2
+scipy==1.5.1
+seaborn==0.11.0
+tqdm==4.48.2
+yellowbrick==1.2
+# install according to the cuda setup
+# default is 10.2
+# torch==1.6.0
+# torchvision==0.7.0
+# Following is for cuda 9.2
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==1.6.0+cu92
+torchvision==0.7.0+cu92
+torchinfo==0.0.8
+# The pytorch-metric-learning requires the faiss package which is officially
+# hosted on conda channels
+# conda install -c conda-forge faiss-gpu=1.6.4
